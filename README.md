@@ -29,7 +29,7 @@
                     "stream_key": "hxaxiZMFVF5AlAIcV5zRZ5Aha15SD8HpApfvVSlmf2KrKyFDQqiynPCanoYFJF2v",
                      "Access-Control-Allow-Headers" : "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
                             "Access-Control-Allow-Methods" : "POST, PUT, PATCH, GET, DELETE, OPTIONS",
-                            "Access-Control-Allow-Origin" : "[*](https://xfuzzylogic.github.io/)","Access-Control-Allow-Credentials" : "true"
+                            "Access-Control-Allow-Origin" : "https://xfuzzylogic.github.io","Access-Control-Allow-Credentials" : "true", "mode": "no-cors"
                     },
                     "data": "{\r\n    \"dataSource\": \"dbStream\",\r\n    \"database\": \"dbStream\",\r\n    \"collection\": \"Users\",\r\n    \"filter\": {\r\n    },\r\n    \"sort\": { \"credate\": 1 },\r\n    \"limit\": 100\r\n  }",
                 };
