@@ -27,10 +27,9 @@
                     "Content-Type": "application/json",
                     "Accept": "application/json",
                     "stream_key": "hxaxiZMFVF5AlAIcV5zRZ5Aha15SD8HpApfvVSlmf2KrKyFDQqiynPCanoYFJF2v",
-                    "Access-Control-Allow-Headers" : "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
-                    "Access-Control-Allow-Methods" : "POST, PUT, PATCH, GET, DELETE, OPTIONS",
-                    "Access-Control-Allow-Credentials" : "include",
-                    "Access-Control-Allow-Origin" : "*"
+                     "Access-Control-Allow-Headers" : "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
+                            "Access-Control-Allow-Methods" : "POST, PUT, PATCH, GET, DELETE, OPTIONS",
+                            "Access-Control-Allow-Origin" : "*","Access-Control-Allow-Credentials" : "true"
                     },
                     "data": "{\r\n    \"dataSource\": \"dbStream\",\r\n    \"database\": \"dbStream\",\r\n    \"collection\": \"Users\",\r\n    \"filter\": {\r\n    },\r\n    \"sort\": { \"credate\": 1 },\r\n    \"limit\": 100\r\n  }",
                 };
