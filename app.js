@@ -13,16 +13,16 @@ const collection = 'Users';
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
-app.get('/xfuzzylogic.github.io', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'README.md'));
 });
 
-app.get('/xfuzzylogic.github.io/getUsersInfo', async (req, res) => {
+app.get('/getUsersInfo', async (req, res) => {
     const dataList = await db.getDB().collection(collection).find({}).toArray();
     res.json(dataList);
 });
 
-app.post('/xfuzzylogic.github.io/', async (req, res) => {
+app.post('/', async (req, res) => {
     const userInput = req.body;
     const result = await db.getDB().collection(collection).insertOne(userInput);
     res.json({result: result, document: result[0]});
@@ -30,7 +30,7 @@ app.post('/xfuzzylogic.github.io/', async (req, res) => {
 });
 
 
-app.put('/xfuzzylogic.github.io/:id', async (req, res) => {
+app.put('/:id', async (req, res) => {
     const docId = req.params.id;
     const userInput = req.body;
 
